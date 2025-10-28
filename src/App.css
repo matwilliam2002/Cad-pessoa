@@ -1,38 +1,99 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Área principal */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background-color: antiquewhite;
 }
 
-.App-link {
-  color: #61dafb;
+/* Container geral */
+.container-all {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Container do formulário */
+.container-formulario {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Estilo do formulário */
+.form-cad {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-cad h1 {
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+/* Campos */
+.form-cad div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-cad label {
+  font-weight: 600;
+  color: #636e72;
+  margin-bottom: 5px;
+}
+
+.form-cad input {
+  padding: 10px 14px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+
+.form-cad input:focus {
+  border-color: #74b9ff;
+  box-shadow: 0 0 5px rgba(116, 185, 255, 0.6);
+}
+
+/* Container da lista */
+.listar-pessoas {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.listar-pessoas h1 {
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-all {
+    flex-direction: column;
+    padding: 25px;
   }
 }
