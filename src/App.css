@@ -90,6 +90,31 @@
   margin-bottom: 15px;
 }
 
+button {
+  background-color: #3498db; /* azul principal */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+  background-color: #2980b9; /* azul mais escuro */
+  transform: scale(1.05); /* cresce um pouquinho */
+}
+
+/* Efeito quando o botão é clicado */
+button:active {
+  transform: scale(0.98);
+  background-color: #1f6391;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .container-all {
